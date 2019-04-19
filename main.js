@@ -1,4 +1,4 @@
-import render from './lib/render'
+import render from './lib/render.js'
 
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
