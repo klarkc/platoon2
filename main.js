@@ -5,6 +5,10 @@ const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 const reqFrame = window.requestAnimationFrame
 
+const assets = [
+    soldier.load()
+]
+
 function nextFrame() {
     // get user input
     // getUserInput()
