@@ -1,4 +1,5 @@
 import render from './lib/render.js'
+import soldier from './lib/soldier/index.js'
 
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
@@ -10,6 +11,9 @@ function nextFrame() {
 
     // process one frame
     // updateGame()
+    const entities = [
+        soldier.create(),
+    ]
 
     // draw everything on the screen
     ctx.clearRect(0, 0, 640, 480)
