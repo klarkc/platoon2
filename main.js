@@ -1,8 +1,8 @@
 import createGame from './lib/game.js'
+import createEngine from './lib/engine.js';
 
 (async function() {
-    const canvas = document.querySelector('canvas')
-    const requestFrame = window.requestAnimationFrame
-    const game = await createGame({canvas, requestFrame})
+    const engine = createEngine()
+    const game = await createGame({engine})
     game.resume()
 })();
