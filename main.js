@@ -1,8 +1,8 @@
-import createGame from './lib/game.js'
-import createEngine from './lib/engine.js';
+import buildGame from './lib/game.js'
+import buildEngine from './lib/engine.js';
 
 (async function() {
-    const engine = createEngine()
-    const game = await createGame({engine})
+    const engine = buildEngine()
+    const game = await buildGame({engine})
     game.resume()
 })();
